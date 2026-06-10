@@ -4,6 +4,24 @@ Project context for AI coding sessions. Read this before making any changes.
 
 ---
 
+## GitHub Repository
+
+**URL:** https://github.com/atifmanzoorali/FocusFlow
+**Branch:** `main`
+
+Every change made to this codebase must follow this workflow before being pushed:
+
+1. **Make the change** — edit the relevant files
+2. **Run tests** — `npm test` must pass with zero failures
+3. **Load in Chrome** — reload the extension at `chrome://extensions` and manually verify the affected feature works
+4. **Get approval** — confirm with Atif before pushing
+5. **Commit with a clear message** — describe what changed and why
+6. **Push to main** — `git push`
+
+Never push directly without completing steps 2–4 first. No exceptions.
+
+---
+
 ## What This Is
 
 FocusFlow is a free, open-source Chrome extension that prevents tab hoarding. It enforces a user-defined tab limit (1–20) and automatically parks excess tabs into a Parking Lot using LRU (Least Recently Used) logic. It includes a Focus Mode (Pomodoro-style timer) that locks settings and sweeps tabs down to the limit immediately on start.
