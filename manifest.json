@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "FocusFlow: The Tab Limiter",
+  "version": "1.0.0",
+  "description": "A strict but elegant tab manager that prevents Tab Hoarding and reduces browser anxiety.",
+  "author": "Atif Manzoor",
+  "homepage_url": "https://github.com/atifmanzoor/focusflow",
+
+  "permissions": [
+    "tabs",
+    "storage",
+    "sidePanel",
+    "alarms",
+    "notifications"
+  ],
+  "action": {
+    "default_title": "FocusFlow",
+    "default_icon": {
+      "16": "branding/zen-icon16.png",
+      "48": "branding/zen-icon48.png",
+      "128": "branding/zen-icon128.png"
+    },
+    "default_panel": "sidepanel/sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background/background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/sidepanel.html"
+  },
+  "icons": {
+    "16": "branding/zen-icon16.png",
+    "48": "branding/zen-icon48.png",
+    "128": "branding/zen-icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

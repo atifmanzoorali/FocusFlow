@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusFlow</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div id="app">
+    <header class="header">
+      <h1>FocusFlow</h1>
+      <p class="subtitle">Tab Limiter</p>
+      <div id="focus-badge" class="focus-badge hidden">Focus Active</div>
+    </header>
+    <main class="main">
+      <section class="tab-meter">
+        <div class="meter-label">
+          <span>Tab Usage</span>
+          <span id="tab-count">0 / 5</span>
+        </div>
+        <div class="meter-bar">
+          <div id="meter-fill" class="meter-fill"></div>
+        </div>
+      </section>
+      <section class="settings">
+        <label for="limit-input">Tab Limit</label>
+        <input type="number" id="limit-input" min="1" max="20" value="5">
+      </section>
+      <section class="focus-mode">
+        <h2>Focus Mode</h2>
+        <div class="focus-controls">
+          <select id="focus-duration">
+            <option value="5">5 minutes</option>
+            <option value="15">15 minutes</option>
+            <option value="25" selected>25 minutes</option>
+            <option value="45">45 minutes</option>
+            <option value="60">60 minutes</option>
+          </select>
+        </div>
+        <button id="btn-start-focus" class="btn-focus">Start Focus</button>
+
+        <div id="focus-timer" class="focus-timer hidden"></div>
+      </section>
+      <section class="parking-lot">
+        <h2>Parking Lot</h2>
+        <div id="parked-tabs" class="parked-tabs">
+          <p class="empty-message">No parked tabs</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="sidepanel.js"></script>
+</body>
+</html>
