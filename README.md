@@ -1,5 +1,7 @@
 # FocusFlow — The Tab Limiter
 
+**GitHub:** https://github.com/atifmanzoorali/FocusFlow
+
 A free, open-source Chrome extension that enforces a hard tab limit and automatically parks your excess tabs so nothing gets lost.
 
 ---
